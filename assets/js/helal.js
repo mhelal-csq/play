@@ -4,8 +4,8 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     // Get the value of the "carType" input field
-    const carTypeInput = document.getElementById("carType");
-    const carType = carTypeInput.value;
+     carTypeInput = document.getElementById("carType");
+     carType = carTypeInput.value;
 
     // Validate that the input is not empty
     if (!carType.trim()) {
