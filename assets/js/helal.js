@@ -20,6 +20,6 @@ form.addEventListener("submit", (event) => {
 
     // Log the event to the console
     console.log(`Tracked event with carType: ${carType}`);
-    carTypeInput.reset();
+    carTypeInput = '';
     
 } )
