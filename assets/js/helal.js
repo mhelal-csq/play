@@ -20,7 +20,6 @@ form.addEventListener("submit", (event) => {
 
     // Log the event to the console
     console.log(`Tracked event with carType: ${carType}`);
+    // Clear the input field
     carTypeInput.value = '';
-    console.log('Car Input set to null')
-    
 } )
