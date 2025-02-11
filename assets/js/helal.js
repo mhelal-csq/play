@@ -25,7 +25,7 @@ form.addEventListener("submit", (event) => {
 } )
 
 document.addEventListener("DOMContentLoaded", function() {
-    if (/\/car$/.test(window.location.pathname)) {
+    if (/\/car.html$/.test(window.location.pathname)) {
         let val = 'Not Processed';
         var selector = '#testElementHide';
         var element = document.querySelector(selector);
