@@ -25,9 +25,6 @@ form.addEventListener("submit", (event) => {
 } )
 
 document.addEventListener("DOMContentLoaded", function() {
-    const button = document.getElementById("HelalTrackButton");
-
-    if (button) {
         button.addEventListener("click", function() {
             let val = 'Not Processed';
             var selector = '#testElementHide';
@@ -42,8 +39,5 @@ document.addEventListener("DOMContentLoaded", function() {
             heap.addEventProperties({
                 hiddenOrNot: val
             });
-
-            console.log("Heap event properties added!");
         });
-    }
-});
+    });
