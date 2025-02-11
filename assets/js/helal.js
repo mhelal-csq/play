@@ -25,7 +25,6 @@ form.addEventListener("submit", (event) => {
 } )
 
 document.addEventListener("DOMContentLoaded", function() {
-        button.addEventListener("click", function() {
             let val = 'Not Processed';
             var selector = '#testElementHide';
             var element = document.querySelector(selector);
@@ -39,5 +38,5 @@ document.addEventListener("DOMContentLoaded", function() {
             heap.addEventProperties({
                 hiddenOrNot: val
             });
-        });
+       
     });
