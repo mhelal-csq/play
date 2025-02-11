@@ -25,18 +25,22 @@ form.addEventListener("submit", (event) => {
 } )
 
 document.addEventListener("DOMContentLoaded", function() {
-            let val = 'Not Processed';
-            var selector = '#testElementHide';
-            var element = document.querySelector(selector);
-            if (!element){
-                val = "Not Found"
-            } else if (window.getComputedStyle(element).display == 'none' || window.getComputedStyle(element).visibility == 'hidden') {
-                val = "Hidden"
-            } else {
-                val = "Visible"
-            }
-            heap.addEventProperties({
-                hiddenOrNot: val
-            });
-       
-    });
+    if (/\/car$/.test(window.location.pathname)) {
+        let val = 'Not Processed';
+        var selector = '#testElementHide';
+        var element = document.querySelector(selector);
+        
+        if (!element) {
+            val = "Not Found";
+        } else if (window.getComputedStyle(element).display == 'none' || 
+                   window.getComputedStyle(element).visibility == 'hidden') {
+            val = "Hidden";
+        } else {
+            val = "Visible";
+        }
+        
+        heap.addEventProperties({
+            hiddenOrNotHELAL: val
+        });
+    }
+});
