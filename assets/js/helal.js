@@ -23,3 +23,27 @@ form.addEventListener("submit", (event) => {
     // Clear the input field
     carTypeInput.value = '';
 } )
+
+document.addEventListener("DOMContentLoaded", function() {
+    const button = document.getElementById("HelalTrackButton");
+
+    if (button) {
+        button.addEventListener("click", function() {
+            let val = 'Not Processed';
+            var selector = '#testElementHide';
+            var element = document.querySelector(selector);
+            if (!element){
+                val = "Not Found"
+            } else if (window.getComputedStyle(element).display == 'none' || window.getComputedStyle(element).visibility == 'hidden') {
+                val = "Hidden"
+            } else {
+                val = "Visible"
+            }
+            heap.addEventProperties({
+                hiddenOrNot: val
+            });
+
+            console.log("Heap event properties added!");
+        });
+    }
+});
