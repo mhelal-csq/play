@@ -1,5 +1,22 @@
 const form = document.getElementById("carForm");
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('UserPropTest').addEventListener('click', function () {
+      heap.addUserProperties({
+        identity: "bob@example.com",
+        age: "25",
+        language: "English",
+        profession: "Scientist",
+        email: "bob2@example2.com"
+      });
+  
+      console.log("User properties sent to Heap!");
+    });
+  });
+  
+  
+
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
