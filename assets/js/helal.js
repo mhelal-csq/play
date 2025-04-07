@@ -50,14 +50,14 @@ document.addEventListener('DOMContentLoaded', function () {
         asd: "1",
         bss: "2",
         ax: "1",
-        bxx: "2",
-        axs: "1",
-        bvc: "2",
-        axsa: "1",
-        bert: "2",
-        awwq: "1",
-        bassd: "2",
-        cspl: "3"
+        bxx_last: "2",
+        axs_last: "1",
+        bvc_last: "2",
+        axsa__last: "1",
+        bert__last: "2",
+        awwq_last: "1",
+        bassd_last: "2",
+        cspl_last: "3"
       });
   
       console.log("User properties sent to Heap!");
