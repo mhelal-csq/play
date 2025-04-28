@@ -1,68 +1,6 @@
 const form = document.getElementById("carForm");
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('UserPropTest').addEventListener('click', function () {
-      heap.addUserProperties({
-        identity: "bob@example.com",
-        age: "25",
-        language: "English",
-        profession: "Scientist",
-        email: "bob2@example2.com",
-        aa: "1",
-        b: "2",
-        a: "1",
-        cb: "2",
-        ca: "1",
-        fb: "2",
-        ffa: "1",
-        rb: "2",
-        fffa: "1",
-        tb: "2",
-        wa: "1",
-        ssb: "2",
-        dda: "1",
-        fgdb: "2",
-        va: "1",
-        flb: "2",
-        al: "1",
-        bi: "2",
-        ai: "1",
-        cbuu: "2",
-        cap: "1",
-        cbq: "2",
-        caqq: "1",
-        cbqqq: "2",
-        cbw: "2",
-        casd: "1",
-        cbss: "2",
-        dax: "1",
-        dbxx: "2",
-        daxs: "1",
-        dbvc: "2",
-        daxsa: "1",
-        dbert: "2",
-        awwq: "1",
-        bassd: "2",
-        cspl: "3",
-        aqwe: "1",
-        bw: "2",
-        asd: "1",
-        bss: "2",
-        ax: "1",
-        bxx_last: "2",
-        axs_last: "1",
-        bvc_last: "2",
-        axsa__last: "1",
-        bert__last: "2",
-        awwq_last: "1",
-        bassd_last: "2",
-        cspl_last: "3"
-      });
-  
-      console.log("User properties sent to Heap!");
-    });
-  });
   
   
 
